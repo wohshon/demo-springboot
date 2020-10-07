@@ -13,3 +13,10 @@ Ramdom `echo` services for use in testing purposes
 - Get example returning JSON payload
 
         curl localhost:8080/echojson/world
+
+## Running as a openshift service
+
+	oc new-app registry.redhat.io/openjdk/openjdk-11-rhel7~https://github.com/wohshon/demo-springboot --context-dir=/ --name=demo
+
+	oc expose svc demo
+
