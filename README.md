@@ -16,7 +16,8 @@ Ramdom `echo` services for use in testing purposes
 
 ## Running as a openshift service
 
-	oc new-app registry.redhat.io/openjdk/openjdk-11-rhel7~https://github.com/wohshon/demo-springboot --context-dir=/ --name=demo
-
+	oc new-app registry.redhat.io/openjdk/openjdk-11-rhel7~https://github.com/wohshon/demo-springboot#metrics --context-dir=/ --name=demo-app
+        
 	oc expose svc demo
 
+## actuator and micromter libraries injected
